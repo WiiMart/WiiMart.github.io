@@ -32,8 +32,12 @@ Install both the WiiMart WAD and the patched IOS WAD (for Wii). Install by going
 
 So far, getting the shop on a blank NAND has been unsuccesful.
 
-# Mirror
-This [link](https://wiimart.mirror1.errexe.xyz/) will take you to the Wiimart mirror page provided by @TheErrorExe
+# Mirrors
+WiiMart's latest WAD can always be found here: https://lnlenost.github.io/various-stuff/wiimart/WiiMart.wad
+
+cIOS 56 for the Wii is available here: https://lnlenost.github.io/various-stuff/wiimart/IOS56(Wii).wad
+
+While cIOS56 for vWii (Wii U) here: https://lnlenost.github.io/various-stuff/wiimart/IOS56(vWii).wad 
 
 
 (Pages managed by [LNLenost](https://github.com/LNLenost))
