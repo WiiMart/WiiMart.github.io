@@ -1,6 +1,6 @@
 # WiiMart: a working, active WSC revival
 
-<img src="https://github.com/LNLenost/various-stuff/blob/main/WiiMart_star_logo.png" width="100" height="100" align="right" />
+<img src="WiiMart_star_logo.png" width="100" height="100" align="right" />
 
 Nintendo, if you want me to take this down, please email me at wiimartshopping@gmail.com
 (please don't though I love this)
