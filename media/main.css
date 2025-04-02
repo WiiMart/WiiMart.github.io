@@ -1,5 +1,5 @@
 body {background-color: #1164E9;color:white;text-align: center;font-family: sans-serif;}
-div {border-color: #00378F;box-sizing: border-box;border-width: 5px;border-style: solid;background-color: #00378F;width: 50%;text-align: center;margin: 0 auto;padding: 5px;margin-top: 6px; overflow: auto}
+div {border-color: #00378F;box-sizing: border-box;border-width: 5px;border-style: solid;background-color: #00378F;width: 35%;text-align: center;margin: 0 auto;padding: 5px;margin-top: 6px; overflow: auto}
 div.clear {border:none;background: none;}
 button {border-color: white;border-width: 2px;border-style: solid;font-family: sans-serif;color: white; background-color:#1164E9; padding: 10px;font-weight: bold;}
 button:hover {cursor: pointer;}
