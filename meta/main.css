@@ -1,29 +1,32 @@
 @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
+/*Main things*/
 body {scroll-behavior:smooth;text-align: center;font-family: sans-serif;margin: 0;font-family: 'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out; }
 div {background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 6px; overflow: auto;}
 div.clear {border:none;background: none;box-shadow: none;}
 header {background-color: #1164E9;width: 100%;padding: 10px;border-style: solid;border-top: white;border-right: none;border-left: none;}
-button { font-family: 'Shop',sans-serif;padding: 5px; border:none;outline:2px solid #34BEED; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #46464615;}
-button:hover { border:none;outline:3px solid #34BEED;cursor: pointer;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #34BEED7c);box-shadow:inset 1px 1px 12px #46464615;}
+button {font-family:'Shop',sans-serif;padding: 5px; border:none;outline:2px solid #34BEED; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #46464615;}
+button:hover { border:none;outline:3px solid #34BEED;cursor: pointer;filter: drop-shadow(1px 1px 3.4px #34BEED7c);box-shadow:inset 1px 1px 12px #46464615;}
 button:active { box-shadow: none;}
 footer {color:grey}
 footer a {color:grey;font-weight: bold;}
 
+/* Text stuff */
 h1, h2 {color:#34BEED}
 a {color:#34BEED}
 body.dir {text-align: left;}
 body.dir a {color:black;text-decoration: none;}
 table {border: 1px solid white; border-collapse: collapse;}
 th, td {border: 1px solid}
-.profilepic{border-radius:5px;}
-@media (max-width: 768px) {div {width: 100%;}}
+img.pfp {border-radius:5px;}
 
-     /* PC */
-     @media only screen and (min-width: 744px) { body {background-image:url("meta/background.PNG"); scroll-behavior:smooth;text-align: center;font-family: sans-serif;margin: 0;font-family: 'Shop',sans-serif; overflow-x:hidden; background-position:top; background-size:100%; background-color:#f9fdff;    }  }
-     /* PC */
-           
-    /* mobile */
-     @media only screen and (max-width: 743px) { body {scroll-behavior:smooth; background-color:#f9fdff; } }
-    /* mobile */
-/* background-image:url("/meta/background.PNG"); */
+/* Gallery */
+div.gallery {position: relative; overflow: hidden;}
+img.arrow {position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; width: 60px; height: auto;}
+img.left {left: 10px; animation: hoverAnimation 0.5s infinite alternate;}
+img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
+@keyframes hoverAnimation {0% {transform: translateY(-50%) translateX(0);} 100% {transform: translateY(-50%) translateX(5px);}}
+@keyframes rightHoverAnimation {0% {transform: translateY(-50%) translateX(0); } 100% {transform: translateY(-50%) translateX(-5px);}}
+
+/* Auto-resizer, do not change pls*/
+@media (max-width: 768px) {div {width: 100%;}}

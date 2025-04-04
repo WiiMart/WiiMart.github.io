@@ -4,7 +4,10 @@
 
 This is the website of WiiMart, it contains WADs, branding, and project information.
 
-* `index.html` Main page
-* `download.html` Installation instructions
+* `404.html` 404 page
 * `branding.html` Branding for WiiMart
-* `/media` Files used throughout the site
+* `download.html` Installation instructions
+* `index.html` Main page
+* `/media` Media files used throughout the site (profile pictures, branding, screenshots, WADs)
+* `/meta` Files used for the website (CSS, JS, arrow images)
+* `/wad` WAD files (patched IOS and shop)

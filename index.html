@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <style>
-      /* fix page being blank for a second before the css loads */
-      @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
-   </style>
+   <style>@font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}</style>
    <title>WiiMart: an active Wii Shop revival!</title>
    <meta content="WiiMart: an active Wii Shop revival!" property="og:title" />
    <meta content="WiiMart is an open-source revival of the defunct Wii Shop Channel. This website contains information about it and the project team behind it!" property="og:description" />
@@ -14,22 +11,30 @@
    <meta name="keywords" content="WiiMart, Wii Shop, homebrew">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="meta/main.css" />
+   <script src="meta/gallery.js" defer></script>
    <link rel="icon" type="image/x-icon" href="meta/wiimart-bag.ico" />
 </head>
 <body>
 
 <header ><a href="branding"><img src="media/branding-wordmark-white.png" width="200px"></a></header>
 
-<h1><i>Your</i> Wii Shop Channel!</h1>
+<h1>WiiMart</h1>
 
 <div class="block" style="padding-bottom:10px;">
-    <h2>About</h2>
-    <p>WiiMart is a revival for the defunct Wii Shop Channel service. It was closed on January 30, 2019, making
-       an entire library of digital-exclusive games get left behind. WiiMart brings back the experience of
+    <p>WiiMart is an open-source revival for the defunct Wii Shop Channel service. It was closed on January 30, 2019,
+       making an entire library of digital-exclusive games get left behind. WiiMart brings back the experience of
        downloading and playing these titles with a revival of the Wii Shop Channel.</p>
     <p>If WiiMart sounds like what you are looking for, try it out for yourself! WiiMart can be used on
        Wii, Wii U, and partially Dolphin.</p>
     <a href="download"><button>Download</button></a>
+</div>
+
+<div class="gallery">
+   <img src="media/screenshot-start-menu.png">
+   <img src="media/screenshot-main-menu.png">
+   <img src="media/screenshot-catalog.png">
+   <img src="media/screenshot-game.png">
+   <img src="media/screenshot-news.png">
 </div>
 
 <h1>What's on it?</h1>
@@ -38,7 +43,7 @@
     <h2>The originals!</h2>
     <p>WiiMart includes a variety of WiiWare content that was available on the original Wii Shop Channel, such
        as <b>Dr. Mario Online Rx</b>, <b>My Pokemon Ranch</b>, <b>Super Mario 64</b>,
-       <b>Sonic the Hedgehog 4: Episode I</b>, and <b>Fishie Fishie</b>.</p>
+       <b>Sonic the Hedgehog 4: Episode I</b>, and <a href="fishiemart" style="color:black;cursor:default"><b>Fishie Fishie</b></a>.</p>
     <p>Virtual Console is also included with titles like <b>Super Mario Bros.</b>, <b>Sonic the Hedgehog</b>, <b>Super Mario 64</b>,
        <b>Pac-Man</b>, and <b>Galaga</b>.</p>
 </div>
@@ -50,21 +55,14 @@
        and <b>Mortal Kombat</b>.</p>
 </div>
 
-
-<h1>How is it going?</h1>
-
-<div>
-    <h2>Shop Progress</h2>
-    <p>So far, the developers have been utilizing most of the channel's features. Downloading, dynamic banners, catalogs, are all
-       working.</p>
-</div>
-
 <h1>How do I get support?</h1>
 
 <p>Please consult the FAQ first.</p>
 
 <div>
     <h2>Frequently Asked Questions</h2>
+    <h3>I want to ask ow the shop is doing.</h3>
+    <p>So far, the developers have been utilizing most of the channel's features. Downloading, dynamic banners, catalogs, are all
     <h3>When is <i>this feature</i> going to be added?</h3>
     <p>The owner and developers are updating on their own time. In the meantime you can check the progress above
        for what features do and don't work. <b>Important: Gifting is no longer available at the moment.</b></p>
@@ -77,23 +75,26 @@
 </div>
 
 <div>
-    <h2>Other Questions</h2>
-    <p>You may ask in our Discord server, the <b>#support</b> or <b>#ticket</b> channel will surely help you.</p>
+   <h2>Other Questions</h2>
+   <p>You may ask in our Discord server, the <b>#support</b> or <b>#ticket</b> channel can help you.</p>
+   <a href="https://discord.gg/wiimart"><button>Discord</button></a><br><br>
 </div>
 
 <h1>Who is involved?</h1>
 
 <div class="block">
     <h2>Project Members</h2>
-    <a href="https://github.com/Ocarinaoftime" title="Ocarina" ><img  src="media/pfp-ocarina.png" class="profilepic"></a>
-    <a href="https://larsenv.xyz" title="Larsenv"><img src="media/pfp-larsenv.png" class="profilepic"></a>
-    <img src="media/pfp-wabagg.png" title="Wabagg123" class="profilepic">
-    <a href="https://gemdation.com" title="Gemdation"><img src="media/pfp-gem.png" class="profilepic" ></a>
-    <a href="https://chrisplayzyt.github.io" title="ChrisplayzWii"><img src="media/pfp-chris.png" class="profilepic"></a>
+    <a href="https://github.com/Ocarinaoftime" title="Ocarina"><img src="media/pfp-ocarina.png" class="pfp"></a>
+    <a href="https://larsenv.xyz" title="Larsenv"><img src="media/pfp-larsenv.png" class="pfp"></a>
+    <img src="media/pfp-wabagg.png" title="Wabagg123" class="pfp">
+    <a href="https://gemdation.com" title="Gemdation"><img src="media/pfp-gem.png" class="pfp" ></a>
+    <a href="https://chrisplayzyt.github.io" title="ChrisplayzWii"><img src="media/pfp-chris.png" class="pfp"></a>
     <a href="https://github.com/thom2305" title="Thom"><img src="media/pfp-thom.png"></a>
-    <a href="https://idkwh.ct8.pl"title="idkwhereisthisname"><img src="media/pfp-idkwh.png" class="profilepic"></a>
-    <a href="https://lnlenost.netlify.app"title="LNLenost"><img src="media/pfp-lnl.png" class="profilepic"></a>
-    <a href="https://andry6702.net" title="Andry6702"><img src="media/pfp-andry.png" class="profilepic"></a>
+    <a href="https://idkwh.ct8.pl"title="idkwhereisthisname"><img src="media/pfp-idkwh.png" class="pfp"></a>
+    <a href="https://lnlenost.netlify.app"title="LNLenost"><img src="media/pfp-lnl.png" class="pfp"></a>
+    <a href="https://andry6702.net" title="Andry6702"><img src="media/pfp-andry.png" class="pfp"></a>
+    <p>Want to also contribute to this website or the channel? Check out WiiMart on GitHub!</p>
+    <a href="https://github.com/WiiMart"><button>GitHub</button></a><br><br>
 </div>
 
 <footer><p>WiiMart is not affiliated with Nintendo or any related parties. To contact, please send an email to <a href="mailto:wiimartshopping@gmail.com"><b>wiimartshopping@gmail.com</b></a>.</p></footer>
