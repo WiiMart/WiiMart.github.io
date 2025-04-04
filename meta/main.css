@@ -1,6 +1,6 @@
 @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
-body {text-align: center;font-family: sans-serif;margin: 0;font-family: 'Shop',sans-serif;overflow: hidden;}
+body {text-align: center;font-family: sans-serif;margin: 0;font-family: 'Shop',sans-serif;}
 div {background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #0000007c; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 6px; overflow: auto}
 div.clear {border:none;background: none;box-shadow: none;}
 header {background-color: #1164E9;width: 100%;padding: 10px;border-style: solid;border-top: white;border-right: none;border-left: none;}
