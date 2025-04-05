@@ -14,8 +14,6 @@ footer a {color:grey;font-weight: bold;}
 /* Text stuff */
 h1, h2 {color:#34BEED}
 a {color:#34BEED}
-::selection{color: #323232;background: #34BEED;}
-::-moz-selection{color: #323232;background:#34BEED;}
 body.dir {text-align: left;}
 body.dir a {color:black;text-decoration: none;}
 table {border: 1px solid white; border-collapse: collapse;}
@@ -34,6 +32,11 @@ img.left {left: 10px; animation: hoverAnimation 0.5s infinite alternate;}
 img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 @keyframes hoverAnimation {0% {transform: translateY(-50%) translateX(0);} 100% {transform: translateY(-50%) translateX(5px);}}
 @keyframes rightHoverAnimation {0% {transform: translateY(-50%) translateX(0); } 100% {transform: translateY(-50%) translateX(-5px);}}
+
+/* Matt! Yea? update day! what?? New-New Wii Titles! What? im in the bathroom! Update day for WiiMart! */
+#bgmplayer { transition:.3s ease-in-out; opacity:20%; position:fixed; bottom:3px; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
+#bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;}
+#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center; background-color:#FFF; height:0px; width:50%; transition:.3s ease-in-out;}
 
 /* Auto-resizer, do not change pls*/
 @media (max-width: 768px) {div {width: 100%;}}
