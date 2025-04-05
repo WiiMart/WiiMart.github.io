@@ -8,7 +8,9 @@ const errorCodes = {
     "204034": "Invalid SOAP response",
     "204704": "Equivalent to a HTTP 404 error",
     "209531": "Page not found",
-    "209552": "Server error"
+    "209552": "Server error",
+    "209600": "Connection Timeout, the shop took too long to load",
+    "209601": "Connection Timeout, the shop took too long to load"
 };
 
 document.getElementById("submitBtn").addEventListener("click", function() {
