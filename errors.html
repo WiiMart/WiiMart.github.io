@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>@font-face {font-family:'Shop';src:url('meta/shop.ttf') format('truetype');font-weight: normal;font-style: normal;}</style>
+   <title>Error Code Checker</title>
+   <meta content="Error Code Checker" property="og:title" />
+   <meta content="Use this tool to troubleshoot errors on the Wii Shop Channel." property="og:description" />
+   <meta content="https://wiimart.github.io/media/branding-bag.png" property="og:image"/>
+   <meta content="https://wiimart.github.io/errors" property="og:url" />
+   <meta content="#FF0000" data-react-helmet="true" name="theme-color" />
+   <meta name="keywords" content="Errors, support, Wii Shop, homebrew">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="meta/main.css" />
+   <script src="meta/error.js" defer></script> 
+   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+   <style>input {border: 2px solid #CCCCCC;border-bottom-color: #EAEAEA;margin-bottom: 15px;} #results {display:none;} div.err {border-color:red;text-align:left; h2 {color:red} p {color:red}}</style>
+</head>
+<body>
+<div id="bgmplayer">
+    <h2 style="height:20px; margin-top:-9px;">BGM player</h2>
+    <a href="javascript:playBGM();" id="shopbgmselector" style="text-decoration:none;"><button id="shopbgm" >Play BGM</button></a>
+    <p style="color:#8c8c8c; margin-top:-10px; font-style:italic; font-size:10px;"><br>(enable autoplay on your browser for the music to continue playing throughout the website)</p>
+</div>
+
+<h1>Error Code Checker <b style="color:red">BETA</b></h1>
+
+<a href="/"><button>Back</button></a><br><br>
+
+
+<div id="input">
+    <h2>Input Error Code</h2>
+    <input type="text" id="errorCode"  maxlength="6" /><br>
+    <button id="submitBtn" style="margin-bottom: 10px;">Submit</button>
+</div>
+
+
+<div class="err" id="results">
+    <h2 id="code"></h2>
+    <p id="issue"></p>
+    <p><a onclick="refreshPage()" style="color:red;cursor:pointer;text-align:center;"><b>Check another error</b></a></p>    
+</div>
+
+<p>Want to contribute to this? Go see the <a href="https://github.com/WiiMart/WiiMart.github.io/blob/main/meta/error.js">error.js</a> file over at GitHub</p>
+
+<footer><p>WiiMart is not affiliated with Nintendo or any related parties. To contact, please send an email to <a href="mailto:wiimartshopping@gmail.com"><b>wiimartshopping@gmail.com</b></a>.</p></footer>
+
+</body</html>
