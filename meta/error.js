@@ -24,7 +24,7 @@ document.getElementById("submitBtn").addEventListener("click", function() {
         inputDiv.style.display = "none";
         resultsDiv.style.display = "block";
     } else {
-        alert("Invalid error code. Please enter a valid 6-digit error code.");
+        alert("Invalid error code. Please enter a valid 6-digit error code. (the error might not be in the error.js, ask in the discord.)");
     }
 });
 
