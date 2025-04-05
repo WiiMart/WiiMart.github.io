@@ -36,7 +36,7 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 @keyframes rightHoverAnimation {0% {transform: translateY(-50%) translateX(0); } 100% {transform: translateY(-50%) translateX(-5px);}}
 
 /* Matt! Yea? update day! what?? New-New Wii Titles! What? im in the bathroom! Update day for WiiMart! */
-#bgmplayer { transition:.3s ease-in-out; opacity:20%; position:fixed; bottom:3px; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
+#bgmplayer { transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #34BEED; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
 #bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;}
 #wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center; background-color:#FFF; height:0px; width:50%; transition:.3s ease-in-out;}
 
