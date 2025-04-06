@@ -29,7 +29,7 @@ const errorCodes = {
     "220202": "Connection refused",
     "209593": "Access denied by Opera's Wii Shop domain filter",
     "209531": "Equivalent to a HTTP 404 error"
-    "205007": "Online NAND Dump used (Dolphin only)"
+    "205007": "Invalid NAND Dump (Dolphin exclusive)"
 };
 
 document.getElementById("submitBtn").addEventListener("click", function() {
