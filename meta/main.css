@@ -13,7 +13,7 @@ footer a {color:grey;font-weight: bold;}
 
 /* Text stuff */
 h1, h2 {color:#34BEED}
-a {color:#34BEED}
+a {color:#34BEED; font-weight: bold;}
 ::selection{color: #323232;background: #34BEED;}
 ::-moz-selection{color: #323232;background:#34BEED;}
 body.dir {text-align: left;}
