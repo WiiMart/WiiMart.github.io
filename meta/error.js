@@ -28,7 +28,7 @@ const errorCodes = {
     "209800": "No DNS Entry for oss-auth.shop.wii.com",
     "220202": "Connection refused",
     "209593": "Access denied by Opera's Wii Shop domain filter",
-    "209531": "Equivalent to a HTTP 404 error"
+    "209531": "Equivalent to a HTTP 404 error",
     "205007": "Invalid NAND Dump (Dolphin only)"
 };
 
