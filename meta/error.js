@@ -232,7 +232,7 @@ const errorCodes = {
     "220104": "Invalid file",
     "220105": "Javascript error",
     "220106": "Plugin error",
-    "220201": "Not found,
+    "220201": "Not found",
     "220202": "Connection refused",
     "250943": "Problems with your Club Nintendo -account. It can't get connected with your shop account"
 };
