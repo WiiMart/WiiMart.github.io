@@ -26,8 +26,13 @@ img.pfp {width:150px;height:150px;object-fit: cover;margin-right:10px;border-rad
 p.mem {flex: 1;}
 img.ico {vertical-align: middle}
 
+div.issue {border-color:red;color:red;width:100%;text-align:center}
+div.issue h2 {color:red}
+button.issue-button {outline: 2px solid red}
+.issue-detail {display:none}
+
 /* Gallery */
-div.gallery {position: relative; overflow: hidden;}
+div.gallery {position: relative; overflow: hidden;width:100%}
 img.slide {width:100%}
 img.arrow {position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; width: 60px; height: auto;}
 img.left {left: 10px; animation: hoverAnimation 0.5s infinite alternate;}
