@@ -89,6 +89,9 @@ const errorCodes = {
     "204961": "SSL cipher error when trying to communicate with SOAP servers",
     "205007": "Invalid NAND Dump (Dolphin only)",
     "205177": "User Already Exists",
+    "205104": "Could not retrieve points balance",
+    "205114": "Could not convert points balance to integer",
+    "205124": "Cannot find sender friend code",
     "205540": "This software doesn't work in the vWii",
     "205617": "Wii Points card code invalid",
     "205618": "Wii Points card is for another country",
@@ -230,7 +233,7 @@ const errorCodes = {
     "220104": "Invalid file",
     "220105": "Javascript error",
     "220106": "Plugin error",
-    "220201": "Not found,
+    "220201": "Not found",
     "220202": "Connection refused",
     "250943": "Problems with your Club Nintendo -account. It can't get connected with your shop account"
 };

@@ -12,9 +12,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="meta/main.css" />
    <script src="meta/gallery.js" defer></script>
+   <script src="meta/issue.js" defer></script>
    <script src="meta/music.js"></script>
    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-   <style>input {border: 2px solid #CCCCCC;border-bottom-color: #EAEAEA;margin-bottom: 15px;} #results {display:none;} div.err {border-color:red;text-align:left; h2 {color: #FF0000;} p {color: #FF0000;}}</style>
+   <style>img, img.slide {width:100%} input {border: 2px solid #CCCCCC;border-bottom-color: #EAEAEA;margin-bottom: 15px;} #results {display:none;} div.err {border-color:red;text-align:left; h2 {color: #FF0000;} p {color: #FF0000;}}</style>
 </head>
 <body>
 <div id="bgmplayer">
@@ -22,6 +23,7 @@
     <a href="javascript:playBGM();" id="shopbgmselector" style="text-decoration:none;"><button id="shopbgm" >Play BGM</button></a>
     <p style="color:#8c8c8c; margin-top:-10px; font-style:italic; font-size:10px;"><br>(enable autoplay on your browser for the music to continue playing throughout the website)</p>
 </div>
+
 
 <h1>Support</h1>
 
@@ -36,6 +38,13 @@
     <p>Check it with <a href="errors">this tool</a>, otherwise ask for help in the <b>#support</b> channel on <a href="https://wiimart.org">Discord</a>.</p>
     <h3>Why did the gift button dissappear?</h3>
     <p>Gifting was available using a WiiConnect24 revival. Unfortunately we were asked to stop sending out gifts via their service.</p>
+    <h3>How do I change the region?</h3>
+    <div class="gallery" style="width:100%">
+      <img src="media/screenshot-region-help-1.png" class="slide">
+      <img src="media/screenshot-region-help-2.png" class="slide">
+      <img src="media/screenshot-region-help-3.png" class="slide">
+   </div>
+   <p>Go to Wii Shop settings and look for the <b>Change Region</b> button.</p>
 </div>
 
 <h2>Title-related</h2>
@@ -45,7 +54,7 @@
     <p>Install <a href="https://wii.hacks.guide/priiloader">Priiloader</a> and enable the
       <b>Region Free EVERYTHING</b> option in System Menu Hacks, then launch it again.</p>
     <h3 id="OldBanner">What is the old banner WiiMart?</h3>
-    <div class="gallery" style="width:100%">
+    <div class="gallery">
         <img src="media/screenshot-ob-1.png" class="slide">
         <img src="media/screenshot-ob-2.png" class="slide">
         <img src="media/screenshot-ob-3.png" class="slide">
@@ -72,7 +81,49 @@
       numbers are stored, in the SOAP database with encryption.</p>
 </div>
 
-<!--EULA help soon, ig-->
+<h2 id="EULA">User Agreements</h2>
+
+<div>
+  <img src="media/screenshot-eula-help-0.png">
+
+  <p>If you've come across this screen then the following will help. Click on that <b>User Agreements</b> button, if it takes you to the Wii Menu then you can go to it manually.</p>
+  <p><b style="color:red">Precaution:</b> Please make sure you do not have a DNS set that interferes with the EULA. (e.g. str2hax)</p>
+  <h3>Accepting the User Agreements</h3>
+  <img src="media/screenshot-system-menu-wii.png">
+  <p>Click on the bottom right Wii icon to go to <b>Wii Options</b>, then click on <b>Wii System Settings</b>.</p>
+  <img src="media/screenshot-eula-help-1.png">
+  <p>Go to page 2 and click on <b>Internet</b>, then click on <b>User Agreements</b>.</p>
+  <div class="issue">
+    <img src="media/screenshot-eula-help-2-issue.png">
+    <button class="issue-button">If you are on vWii and you see this message, click here!</button>
+    <h2 class="issue-detail">Manually Downloading the EULA</h2>
+    <p class="issue-detail">Before you go to the User Agreements you will need to install the vWii EULA applet.</p>
+    <p class="issue-detail">Download the <a href="https://oscwii.org/library/app/system-channel-restorer">System Channel Restorer</a> app and launch it from The Homebrew Channel, select EULA (and some other channels you might like as well).</p>
+    <img src="media/screenshot-scr-1.png" class="issue-detail">
+    <p class="issue-detail">The homebrew app will look like this.</p>
+    <img src="media/screenshot-scr-2.png" class="issue-detail">
+    <p class="issue-detail">Press A to select the EULA, you can also get other channels while here.</p>
+    <img src="media/screenshot-scr-3.png" class="issue-detail">
+    <p class="issue-detail">Press the <b>+ START</b> button to begin downloading. Once it is done, proceed with this guide.</p>
+  </div><br>
+  <img src="media/screenshot-eula-help-2.png">
+  <p>Click on <b>Yes</b>.</p>
+  <div class="issue">
+    <img src="media/screenshot-eula-help-3-issue.png">
+    <button class="issue-button">If see this screen, click here!</button>
+    <h2 class="issue-detail">How to bypass WiiConnect24 'not offered' message</h2>
+    <p class="issue-detail">This screen appears because the console is set to a country that was not supported by the original Wii Network Services.</p>
+    <p class="issue-detail">Try switching to a country that youthink is supported (e.g. United States for North America, United Kingdom for Europe, etc.)</p>
+  </div>
+  <br>
+
+  <img src="media/screenshot-eula-help-3.png">
+  <p>Click on <b>Next</b>.</p>
+  <img src="media/screenshot-eula-help-4.png">
+  <p>Click on the <b>I ACCEPT</b> button, you'll now return to the Wii Menu.</p>
+
+  <p>You will now be able to load into WiiMart.</p>
+</div>
 
 <footer><p>WiiMart is not affiliated with Nintendo or any related parties. To contact, please send an email to <a href="mailto:support@wiimart.org"><b>support@wiimart.org</b></a>.</p></footer>
 

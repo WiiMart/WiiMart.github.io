@@ -1,60 +1,63 @@
-const gallery = document.querySelector('.gallery');
-const images = gallery.querySelectorAll('img');
-let currentIndex = 0;
+const galleries = document.querySelectorAll('.gallery');
 
-const leftArrow = document.createElement('img');
-leftArrow.src = 'meta/arrow-left.png';
-leftArrow.classList.add('arrow', 'left');
-gallery.appendChild(leftArrow);
+galleries.forEach(gallery => {
+    const images = gallery.querySelectorAll('img');
+    let currentIndex = 0;
 
-const rightArrow = document.createElement('img');
-rightArrow.src = 'meta/arrow-right.png';
-rightArrow.classList.add('arrow', 'right');
-gallery.appendChild(rightArrow);
-
-function showImage(index) {
-    images.forEach((img, i) => {
-        img.style.display = (i === index) ? 'block' : 'none';
-    });
-}
-
-function handleArrowClick(isLeftArrow) {
-    currentIndex = isLeftArrow 
-        ? (currentIndex === 0 ? images.length - 1 : currentIndex - 1) 
-        : (currentIndex === images.length - 1 ? 0 : currentIndex + 1);
-    
-    showImage(currentIndex);
-
-    if (isLeftArrow) {
-        leftArrow.src = 'meta/arrow-left-pressed.png';
-        rightArrow.src = 'meta/arrow-right.png';
-        setTimeout(() => {
-            leftArrow.src = 'meta/arrow-left.png';
-        }, 200);
-    } else {
-        rightArrow.src = 'meta/arrow-right-pressed.png';
-        leftArrow.src = 'meta/arrow-left.png';
-        setTimeout(() => {
-            rightArrow.src = 'meta/arrow-right.png';
-        }, 200);
-    }
-}
-
-leftArrow.addEventListener('click', () => handleArrowClick(true));
-rightArrow.addEventListener('click', () => handleArrowClick(false));
-
-leftArrow.addEventListener('mouseover', () => {
-    leftArrow.src = 'meta/arrow-left-hover.png';
-});
-leftArrow.addEventListener('mouseout', () => {
+    const leftArrow = document.createElement('img');
     leftArrow.src = 'meta/arrow-left.png';
-});
+    leftArrow.classList.add('arrow', 'left');
+    gallery.appendChild(leftArrow);
 
-rightArrow.addEventListener('mouseover', () => {
-    rightArrow.src = 'meta/arrow-right-hover.png';
-});
-rightArrow.addEventListener('mouseout', () => {
+    const rightArrow = document.createElement('img');
     rightArrow.src = 'meta/arrow-right.png';
-});
+    rightArrow.classList.add('arrow', 'right');
+    gallery.appendChild(rightArrow);
 
-showImage(currentIndex);
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+
+    function handleArrowClick(isLeftArrow) {
+        currentIndex = isLeftArrow 
+            ? (currentIndex === 0 ? images.length - 1 : currentIndex - 1) 
+            : (currentIndex === images.length - 1 ? 0 : currentIndex + 1);
+        
+        showImage(currentIndex);
+
+        if (isLeftArrow) {
+            leftArrow.src = 'meta/arrow-left-pressed.png';
+            rightArrow.src = 'meta/arrow-right.png';
+            setTimeout(() => {
+                leftArrow.src = 'meta/arrow-left.png';
+            }, 200);
+        } else {
+            rightArrow.src = 'meta/arrow-right-pressed.png';
+            leftArrow.src = 'meta/arrow-left.png';
+            setTimeout(() => {
+                rightArrow.src = 'meta/arrow-right.png';
+            }, 200);
+        }
+    }
+
+    leftArrow.addEventListener('click', () => handleArrowClick(true));
+    rightArrow.addEventListener('click', () => handleArrowClick(false));
+
+    leftArrow.addEventListener('mouseover', () => {
+        leftArrow.src = 'meta/arrow-left-hover.png';
+    });
+    leftArrow.addEventListener('mouseout', () => {
+        leftArrow.src = 'meta/arrow-left.png';
+    });
+
+    rightArrow.addEventListener('mouseover', () => {
+        rightArrow.src = 'meta/arrow-right-hover.png';
+    });
+    rightArrow.addEventListener('mouseout', () => {
+        rightArrow.src = 'meta/arrow-right.png';
+    });
+
+    showImage(currentIndex);
+});
