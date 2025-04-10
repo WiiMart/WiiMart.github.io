@@ -91,6 +91,7 @@ const errorCodes = {
     "205104": "Could not retrieve points balance",
     "205114": "Could not convert points balance to integer",
     "205124": "Cannot find sender friend code",
+    "205177": "User already exists in database",
     "205540": "This software doesn't work in the vWii",
     "205617": "Wii Points card code invalid",
     "205618": "Wii Points card is for another country",
