@@ -88,6 +88,7 @@ const errorCodes = {
     "204927": "IAS Unknown issuer of device cert",
     "204961": "SSL cipher error when trying to communicate with SOAP servers",
     "205007": "Invalid NAND Dump (Dolphin only)",
+    "205177": "User Already Exists",
     "205104": "Could not retrieve points balance",
     "205114": "Could not convert points balance to integer",
     "205124": "Cannot find sender friend code",
