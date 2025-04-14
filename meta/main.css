@@ -25,6 +25,7 @@ div.pfp {display: flex;align-items: center;width: 100%;}
 img.pfp {width:150px;height:150px;object-fit: cover;margin-right:10px;border-radius: 5px;}
 p.mem {flex: 1;}
 img.ico {vertical-align: middle}
+.blue {color:#1164E9}
 
 div.issue {border-color:red;color:red;width:100%;text-align:center}
 div.issue h2 {color:red}
