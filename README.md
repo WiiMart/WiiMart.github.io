@@ -6,7 +6,9 @@ This is the source code of WiiMart's website. It contains WADs, branding, and pr
 
 * `404.html` 404 page
 * `branding.html` Branding for WiiMart
-* `download.html` Installation instructions
+* `install.html` Installation guide
+* `download.html` Same as `install.html`
+* `fishiemart.html` ???
 * `index.html` Main page
 * `/media` Media files used throughout the site (profile pictures, branding, screenshots, WADs)
 * `/meta` Files used for the website (CSS, JS, arrow images)
