@@ -1,49 +1,53 @@
 @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
 /*Main things*/
-body {scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out; }
-div {background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 6px; overflow: auto;}
-div.clear {border:none;background: none;box-shadow: none;}
+body { scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out; }
+div {line-height:23.3px; background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 8px; overflow: auto;}
+div.clear { border:none;background: none;box-shadow: none;}
 header {background-color: #1164E9;width: 100%;padding: 10px;border-style: solid;border-top: white;border-right: none;border-left: none;}
 button {font-family:'Shop',sans-serif;padding: 5px; border:none;outline:2px solid #34BEED; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #46464615;}
 button:hover {border:none;outline:3px solid #34BEED;cursor: pointer;filter: drop-shadow(1px 1px 3.4px #34BEED7c);box-shadow:inset 1px 1px 12px #46464615;}
-button:active {box-shadow: none}
-footer {color:grey}
+button:active {box-shadow: none;}
+footer {color:grey;}
 footer a {color:grey;font-weight: bold;}
 
 /* Text stuff */
-h1, h2 {color:#34BEED}
+h1, h2 {color:#34BEED;}
 a {color:#34BEED; font-weight: bold;}
 ::selection{color: #323232;background: #34BEED;}
 ::-moz-selection{color: #323232;background:#34BEED;}
 body.dir {text-align: left;}
 body.dir a {color:black;text-decoration: none;font-weight: normal;}
 table {border: 1px solid white; border-collapse: collapse;}
-th, td {border: 1px solid}
-div.mem {display: flex;align-items: flex-start}
+th, td {border: 1px solid;}
+div.mem {display: flex;align-items: flex-start;}
+.uname {max-width:90%;word-wrap:break-word; word-break:break-word;}
 div.pfp {display: flex;align-items: center;width: 100%;}
-img.pfp {width:150px;height:150px;object-fit: cover;margin-right:10px;border-radius: 5px;}
+img.pfp {width:150px;height:150px; min-height:150px; min-width:150px; object-fit: cover;margin-right:10px;border-radius: 5px;}
 p.mem {flex: 1;}
-img.ico {vertical-align: middle}
-.blue {color:#1164E9}
+.ico {min-width:30px; min-height:30px; width:40px; height:40px;}
+img.ico {vertical-align: middle; min-width:30px; min-height:30px; width:40px; height:40px;}
+.blue {color:#1164E9;}
 
-div.issue {border-color:red;color:red;width:100%;text-align:center}
-div.issue h2 {color:red}
-button.issue-button {outline: 2px solid red}
-.issue-detail {display:none}
+div.issue {border-color:red;color:red;width:100%;text-align:center;}
+div.issue h2 {color:red;}
+button.issue-button {outline: 2px solid red;}
+.issue-detail {display:none;}
 
 /* Gallery */
-div.gallery {position: relative; overflow: hidden;width:100%}
-img.slide {width:100%}
-img.arrow {position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; width: 60px; height: auto;}
+div.gallery {position: relative; overflow: hidden;width:100%;}
+img.slide {width:100%; min-height:200px; min-width:100%;}
+img.arrow {min-height:68px; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; width: 60px; height: auto;}
 img.left {left: 10px; animation: hoverAnimation 0.5s infinite alternate;}
 img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 @keyframes hoverAnimation {0% {transform: translateY(-50%) translateX(0);} 100% {transform: translateY(-50%) translateX(5px);}}
 @keyframes rightHoverAnimation {0% {transform: translateY(-50%) translateX(0); } 100% {transform: translateY(-50%) translateX(-5px);}}
 
-/* Matt! Yea? update day! what?? New-New Wii Titles! What? im in the bathroom! Update day for WiiMart! */
-#bgmplayer { transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #34BEED; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
+/* music!1!1 */
+#bgmplayer {transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #34BEED; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
 #bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;}
+
+/* Matt! Yea? update day! what?? New-New Wii Titles! What? im in the bathroom! Update day for WiiMart! */
 #wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center; background-color:#FFF; height:0px; width:50%; transition:.3s ease-in-out;}
 
 /* Auto-resizer, do not change pls*/

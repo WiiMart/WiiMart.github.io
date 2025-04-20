@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <style>@font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}</style>
+   <script src="meta/music.js" ></script>
    <title>FishieMart: an active Fishie Fishie revival!</title>
    <meta content="FishieMart: an active Fishie Fishie revival!" property="og:title" />
    <meta content="FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE FISHIE." property="og:description" />
@@ -10,36 +12,35 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="meta/main.css" />
    <script src="meta/gallery.js" defer></script>
-   <script src="meta/music.js"></script>
    <link rel="icon" type="image/x-icon" href="meta/favicon-fishie.ico" />
    <style>div {border-color: orange; box-shadow: 0 0 10px #a153005d; } h1, h2, h3 {color:orange} a {color:orange}</style>
    <style>button {font-family:'Shop',sans-serif;padding: 5px; border:none;outline:2px solid orange; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #53360015;}button:hover {border:none;outline:3px solid orange;cursor: pointer;filter: drop-shadow(1px 1px 3.4px #edb2347c);box-shadow:inset 1px 1px 12px #57310015;}button:active {box-shadow: none}</style>
 </head>
 <body>
 <div id="bgmplayer">
-   <h2 style="height:20px; margin-top:-9px;">BGM player</h2>
+   <h2 style="height:20px; margin-top:-9px; line-height:40px; ">BGM player</h2>
    <a href="javascript:playBGM();" id="shopbgmselector" style="text-decoration:none;"><button id="shopbgm" >Play BGM</button></a>
    <p style="color:#8c8c8c; margin-top:-10px; font-style:italic; font-size:10px;"><br>(enable autoplay on your browser for the music to continue playing throughout the website)</p>
 </div>
 
-<h1>FishieMart</h1>
+<h1 style="cursor:pointer;">FishieMart</h1>
 
 <div class="block" style="padding-bottom:10px;">
     <p>FishieMart is a revival for the defunct Fishie Fishie. It was closed on April 1, 2060, banishing
        Fishie Fishie from the universe. FishieMart brings back the experience of
        downloading and playing Fishie Fishie titles with a revival of the Fishie Fishie Channel.</p>
     <p>If FishieMart sounds like what you are looking for, try it out for yourself! FishieMart can be used on
-       Fishii, Fishii U, and partially the <a href="https://spongebob.fandom.com/wiki/Magic_Conch_shell">magic conch shell</a>.</p>
+       Fishii, Fishii U, and partially the <a target="_blank" href="https://spongebob.fandom.com/wiki/Magic_Conch_shell">magic conch shell</a>.</p>
 </div>
 
 <div>
 <h3>Screenshots</h3>
 <div class="gallery">
-   <img src="https://images.nintendolife.com/screenshots/24186/large.jpg" class="slide">
-   <img src="https://images.nintendolife.com/screenshots/24185/large.jpg" class="slide">
-   <img src="https://images.nintendolife.com/screenshots/24179/large.jpg" class="slide">
-   <img src="https://images.nintendolife.com/screenshots/24187/large.jpg" class="slide">
-   <img src="https://images.nintendolife.com/screenshots/24183/large.jpg" class="slide">
+   <img loading="lazy" src="https://images.nintendolife.com/screenshots/24186/large.jpg" class="slide" style="min-height:300px;">
+   <img loading="lazy" src="https://images.nintendolife.com/screenshots/24185/large.jpg" class="slide" style="min-height:300px;">
+   <img loading="lazy" src="https://images.nintendolife.com/screenshots/24179/large.jpg" class="slide" style="min-height:300px;">
+   <img loading="lazy" src="https://images.nintendolife.com/screenshots/24187/large.jpg" class="slide" style="min-height:300px;">
+   <img loading="lazy" src="https://images.nintendolife.com/screenshots/24183/large.jpg" class="slide" style="min-height:300px;">
 </div>
 </div>
 
@@ -83,15 +84,15 @@
 
 <div class="block">
     <h2>Project Fishies</h2>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
-    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
+    <a href="http://christophekohler.epizy.com/FishieFishie" title="Fishie"><img loading="lazy" src="media/pfp-fishie.png" class="pfp"></a>
     <p>Want to also eat some fish? Swim with Fishie by downloading Fishie Fishie on the FishieMart</p>
 </div>
 

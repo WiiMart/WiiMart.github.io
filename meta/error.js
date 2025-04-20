@@ -330,6 +330,8 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     }
 });
 
-function refreshPage() {
-    location.reload();
+function reseterrorcodeform() {
+    document.getElementById("errorCode").value="";
+    document.getElementById("results").style.display="none";
+    document.getElementById("input").style.display="block";
 }

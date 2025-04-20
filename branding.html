@@ -2,6 +2,7 @@
 <html>
 <head>
     <style>@font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}</style>
+    <script src="meta/music.js" preload></script>
    <title>Branding of WiiMart</title>
    <meta content="Branding of WiiMart" property="og:title" />
    <meta content="This page contains the WiiMart branding guidelines." property="og:description" />
@@ -11,13 +12,12 @@
    <meta name="keywords" content="WiiMart, Wii Shop, homebrew">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="meta/main.css" />
-   <script src="meta/music.js"></script>
    <link rel="icon" type="image/x-icon" href="favicon.ico" />
    <style>mark {color:white} .wm {width: 100%}</style>
 </head>
 <body>
 <div id="bgmplayer">
-    <h2 style="height:20px; margin-top:-9px;">BGM player</h2>
+    <h2 style="height:20px; margin-top:-9px; line-height:40px; ">BGM player</h2>
     <a href="javascript:playBGM();" id="shopbgmselector" style="text-decoration:none;"><button id="shopbgm" >Play BGM</button></a>
     <p style="color:#8c8c8c; margin-top:-10px; font-style:italic; font-size:10px;"><br>(enable autoplay on your browser for the music to continue playing throughout the website)</p>
 </div>
@@ -36,22 +36,23 @@
 
 <div>
     <h2>Wordmarks</h2>
-    <div style="border-color:#1164E9;background-color: #1164E9" class="wm"><img src="media/branding-wordmark-white.png" width="300px"></div>
-    <div style="background-color: white;border-color: white;" class="wm"><img src="media/branding-wordmark-blue.png" width="300px"></div>
-    <div style="background-color: white;border-color: white;" class="wm"><img src="media/branding-wordmark-black.png" width="300px"></div>
+    <div style="border-color:#1164E9;background-color: #1164E9" class="wm"><img loading="lazy" src="media/branding-wordmark-white.png" width="300px" height="45px"style="min-width:300px; min-height:45px;"></div>
+    <div style="background-color: white;border-color: white;" class="wm"><img loading="lazy" src="media/branding-wordmark-blue.png" width="300px" height="45px"   style="min-width:300px; min-height:45px;"></div>
+    <div style="background-color: white;border-color: white;" class="wm"><img loading="lazy" src="media/branding-wordmark-black.png" width="300px" height="45px"  style="min-width:300px; min-height:45px;"></div>
     <p>The wordmarks should be visible on the background they are in, like shown.</p>
 </div>
 
 <div>
     <h2>Icons</h2>
-    <img src="media/branding-bag.png" width="200px">    <img src="media/branding-bag-no-bg.png" width="200px">
+    <img loading="lazy" src="media/branding-bag.png" width="200px" height="200px" style="min-width:200px; min-height:200px;">
+    <img loading="lazy" src="media/branding-bag-no-bg.png" width="200px" height="200px" style="min-width:200px; min-height:200px;">
     <br><br>
 </div>
 
 
 <div>
     <h2>Banner</h2>
-    <img src="media/branding-banner.png" width="100%">
+    <img loading="lazy" src="media/branding-banner.png" width="100%" height="100%" style="min-width:100%; min-height:100%;">
     <br><br>
 </div>
 
