@@ -15,7 +15,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="meta/main.css" />
    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-   <style>img {width:100%} button {margin-left: 2px;margin-right: 2px;margin-bottom: 4px;margin-top: 5px;cursor: pointer;} .r {outline: 2px solid #9A9A9A}</style>
+   <style>img {width:100%} button {margin-left: 2px;margin-right: 2px;margin-bottom: 4px;margin-top: 5px;cursor: pointer;} .r {outline: 2px solid #9A9A9A} div#start button {width:100%}</style>
 </head>
 <body>
 <div id="bgmplayer">
@@ -38,9 +38,9 @@
 
 <div id="start" class="question">
    <h2>What platform are you on?</h2>
-   <button onclick="showDiv('dolphin')">Dolphin</button>
-   <button onclick="showDiv('vWii')">vWii</button>
-   <button onclick="showDiv('wii')">Wii</button>
+   <button onclick="showDiv('wii')"><img src="media/button-wii.png">Wii</button><br>
+   <button onclick="showDiv('vWii')"><img src="media/button-vwii.png">vWii</button><br>
+   <button onclick="showDiv('dolphin')"><img src="media/button-dolphin-desktop.png">Dolphin</button>
    <p><b>Important:</b> No matter which option you pick, you will need to have a homebrewed console. If you don't have it homebrewed, see <a href="https://wii.hacks.guide"><b>wii.hacks.guide</b></a> before looking at this guide.</p>
 </div>
 
