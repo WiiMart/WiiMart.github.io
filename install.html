@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="utf-8" />
+   <meta http-equiv="x-ua-compatible" content="ie=edge" />
    <style>@font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}</style>
    <script src="meta/music.js" preload></script>
    <title>Install WiiMart</title>
@@ -26,7 +28,13 @@
 
 <a href="/"><button style="margin:0">Back</button></a><br><br>
 
-<script>function showDiv(divId) {const divs = document.querySelectorAll('.question'); divs.forEach(div => {div.style.display = 'none';}); document.getElementById(divId).style.display = 'block';}</script>
+<script>
+   function showDiv(divId) {
+      const divs = document.querySelectorAll('.question');
+      divs.forEach(div => { div.style.display = 'none'; });
+      document.getElementById(divId).style.display = 'block';
+   }
+</script>
 
 <div id="start" class="question">
    <h2>What platform are you on?</h2>
