@@ -1,7 +1,7 @@
 @font-face {font-family: 'Shop'; src: url('shop.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
 /*Main things*/
-body { scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out; }
+body {scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out; }
 div {line-height:23.3px; background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 8px; overflow: auto;}
 div.clear { border:none;background: none;box-shadow: none;}
 header {background-color: #1164E9;width: 100%;padding: 10px;border-style: solid;border-top: white;border-right: none;border-left: none;}
@@ -28,6 +28,7 @@ p.mem {flex: 1;}
 .ico {min-width:30px; min-height:30px; width:40px; height:40px;}
 img.ico {vertical-align: middle; min-width:30px; min-height:30px; width:40px; height:40px;}
 .blue {color:#1164E9;}
+mark.new {background-color: gold;border-radius: 10px; padding-right:5px; padding-left:5px;}
 
 div.issue {border-color:red;color:red;width:100%;text-align:center;}
 div.issue h2 {color:red;}
@@ -51,4 +52,4 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 #wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center; background-color:#FFF; height:0px; width:50%; transition:.3s ease-in-out;}
 
 /* Auto-resizer, do not change pls*/
-@media (max-width: 768px) {div {width: 100%;}}
+@media (max-width: 768px) {div {width: 95%;}}
