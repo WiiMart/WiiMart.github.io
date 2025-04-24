@@ -8,12 +8,10 @@ This is the source code of WiiMart's website. It contains WADs, branding, and pr
 * `branding.html` Branding for WiiMart
 * `install.html` Installation guide
 * `download.html` Same as `install.html`
-* `fishiemart.html` ???
+* `fishiemart.html` ;D
 * `index.html` Main page
-* `/media` Media files used throughout the site (profile pictures, branding, screenshots, WADs)
+* `/media` Media files used throughout the site (profile pictures, branding, screenshots)
 * `/meta` Files used for the website (CSS, JS, arrow images)
 * `/wad` WAD files (patched IOS and shop)
 
-*WiiMart is not affiliated with Nintendo or any related parties.*
-
-*To contact, please send an email to support@wiimart.org*
+*WiiMart is not affiliated with Nintendo or any related parties. To contact, please send an email to support@wiimart.org*
