@@ -3,15 +3,18 @@
 /*Main things*/
 body {scroll-behavior:smooth;text-align: center;font-family: sans-serif;font-family:'Shop',sans-serif; overflow-x:hidden;transition:.1s ease-in-out;}
 div {line-height:23.3px; background-color: white;border-radius: 5px;border-color: #34BEED;box-shadow: 0 0 10px #2525255d; box-sizing: border-box;border-width: 5px;border-style: solid; width: 35%; text-align: center;margin: 0 auto;padding: 5px;margin-top: 8px; overflow: auto;}
-div.clear { border:none;background: none;box-shadow: none;}
-button {margin-bottom: 6px;background-color: grey;;font-family:'Shop',sans-serif;padding: 5px; border:none;outline:2px solid #34BEED; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #46464615;}
+div.clear {border:none;background: none;box-shadow: none;}
+button {margin-bottom: 6px;background-color: grey;font-family:'Shop',sans-serif;padding: 5px; border:none;outline:2px solid #34BEED; color:black;background-color:white;border-radius: 5px;background-color:#f6fdff;filter: drop-shadow(1px 1px 3.4px #bbbbbb);box-shadow:inset 1px 1px 12px #46464615;}
 button:hover {border:none;outline:3px solid #34BEED;cursor: pointer;filter: drop-shadow(1px 1px 3.4px #34BEED7c);box-shadow:inset 1px 1px 12px #46464615;}
 button:active {box-shadow: none;}
-footer {color:grey;}
-footer a {color:grey;font-weight: bold;}
+button:disabled {outline:2px solid grey;color:darkgrey;cursor: not-allowed;filter:none;}
+
+footer {color:grey}
+footer a {color:grey}
 
 /* Text stuff */
 h1, h2 {color:#34BEED;}
+h1 a {text-decoration:none}
 a {color:#34BEED; font-weight: bold;}
 ::selection{color: #323232;background: #34BEED;}
 ::-moz-selection{color: #323232;background:#34BEED;}
@@ -61,7 +64,9 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
   body {background-color: black; color: #e0e0e0;}
   div {background-color: #1e1e1e; border-color: #34BEED; box-shadow: 0 0 10px #000000CC;}
   button {background-color: #3b3b3b; color: #e0e0e0; outline: 2px solid #34BEED; filter: drop-shadow(1px 1px 3.4px #00000099);}
-  button:hover {outline: 3px solid #34BEED;}
+  button:hover {border:none;outline:3px solid #34BEED;cursor: pointer;filter: drop-shadow(1px 1px 3.4px #34BEED7c);box-shadow:inset 1px 1px 12px #46464615;}
+  button:active {box-shadow: none;}
+  button:disabled {outline:2px solid grey;color:darkgrey;cursor: not-allowed;}
   footer, footer a {color: #999;}
   h1, h2, a {color: #34BEED;}
   ::selection {color: #e0e0e0; background: #34BEED;}
