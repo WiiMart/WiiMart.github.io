@@ -20,4 +20,4 @@ After the downloaded WADs, drag and drop them to the wads folder on your SD Card
 4. Select your Wii SD Card.
 5. Install both of the WADs. WiiMart will be overwritten and replaced by the original Wii Shop Channel for your console.
 
-We are sad to see you go but, thank you for shopping with us!
+We are sad to see you go. Thank you for shopping with us!
