@@ -25,3 +25,5 @@ It is still recommended you join our Discord server.
 - [Special Thanks](/thanks.md)
 
 WiiMart™, since March 2025.
+
+# DONT. MERGE. PLEASE.
