@@ -52,15 +52,18 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
 @keyframes hoverAnimation {0% {transform: translateY(-50%) translateX(0);} 100% {transform: translateY(-50%) translateX(5px);}}
 @keyframes rightHoverAnimation {0% {transform: translateY(-50%) translateX(0);} 100% {transform: translateY(-50%) translateX(-5px);}}
 
-/* music!1!1 */
-#bgmplayer {z-index: 1000;transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #34BEED; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
-#bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;}
+/* Music */
+div#bgmplayer {z-index: 1000;transition:.3s ease-in-out; opacity:30%; position:fixed; bottom:3px; border:2px solid #34BEED; left:3px; float:left; width:160px; height:40px; overflow:hidden;}
+div#bgmplayer:hover {opacity: 50%; transition:.3s ease-in-out; height:100px; width:200px; overflow:auto;scrollbar-width: none;}
+div#bgmplayer h2 {height:20px; margin-top:-9px; line-height:40px}
+div#bgmplayer p {line-height:20px;color:#9A9A9A;margin-top:-10px;font-style:italic;font-size:10px;}
+
 
 /* Matt! Yea? update day! what?? New-New Wii Titles! What? im in the bathroom! Update day for WiiMart! */
-#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center; background-color:#FFF; height:0px; width:50%; transition:.3s ease-in-out;}
+#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; float:center; background-color:#FFF; transition:.3s ease-in-out;}
 
 /* Auto-resizer, do not change pls*/
-@media (max-width: 768px) {div {width: 95%;}}
+@media (max-width: 768px) {div {width: 95%} }
 
 /* Dark theme via system preference */
 @media (prefers-color-scheme: dark)
@@ -77,9 +80,8 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
   ::-moz-selection {color: #e0e0e0; background: #34BEED;}
   mark {color:black;background:#34BEED;font-weight:bold;}
   .blue {color:#5898ff;}
-  #errorCode {background-color: black;border: 2px solid grey}
+  #errorCode {background-color: black;border: 2px solid grey;color:white}
   body.dir a {color:white}
   mark {color:white}
-#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center;color:#FFF !important; background-color:#3b3b3b !important; height:0px; width:50%; transition:.3s ease-in-out;}
-
+  #wednesdaytitles {color:white; background-color:#3b3b3b}
 }

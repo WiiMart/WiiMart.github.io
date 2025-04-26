@@ -1,54 +1,34 @@
-// wii shop theme (suggested by Le gamer66 on discord URL: https://discord.com/channels/1346485785284575335/1346485786039681056/1351527080546009259)
-// wii shop wednesday moment
-var isWednesday = new Date().getDay() === 3;
-// EDIT 4/5/25 7:51 OMG AY IT WORKS YAYSYASFGWSEKFJHWEHFEWHBN
-var shoploop = new Audio(isWednesday ? "/media/shop_bgm_loop_wsw.wav" : "/media/shop_bgm_loop.wav");
+// Wii Shop BGM Player, suggested by @legamer66 (https://discord.com/channels/1346485785284575335/1346485786039681056/1351527080546009259)
+
+function hideConsoleControls() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isConsoleBrowser =
+    userAgent.includes('wii') ||
+    userAgent.includes('nintendo ds') ||
+    userAgent.includes('nintendo 3ds') ||
+    userAgent.includes('nintendo');
+  // they can't play music so rip
+  if (isConsoleBrowser) {const bgmPlayerDiv = document.getElementById('bgmplayer');
+  if (bgmPlayerDiv) {bgmPlayerDiv.style.display = 'none';} }}
+document.addEventListener('DOMContentLoaded', hideConsoleControls);
+
+var shoploop = new Audio("/meta/shop.wav");
 shoploop.loop = true;
 shoploop.volume = 0; // prevent clipping
+
 window.onload = function() {
   var savedTime = localStorage.getItem("bgmlooppoint");
 
   if (savedTime) {
-    shoploop.currentTime = parseFloat(savedTime); 
+    shoploop.currentTime = parseFloat(savedTime);
   }
 
   if (localStorage.getItem("shopmusic") === "playing") {
     playBGMonload();
   } else {
     pauseBGM();
-  }
-
-  if (isWednesday) {
-    document.getElementById("wednesdaytitles").style.display = "block";
-    document.getElementById("wednesdaytitles").style.height="fit-content";
-  } else {
-    document.getElementById("wednesdaytitles").style.display = "none";
-    document.getElementById("wednesdaytitles").style.height="0px";
   }
 };
-
-function bgm2() {
-  // loads on html load for quicker music
-  var savedTime = localStorage.getItem("bgmlooppoint");
-
-  if (savedTime) {
-    shoploop.currentTime = parseFloat(savedTime); 
-  }
-
-  if (localStorage.getItem("shopmusic") === "playing") {
-    playBGMonload();
-  } else {
-    pauseBGM();
-  }
-
-  if (isWednesday) {
-    document.getElementById("wednesdaytitles").style.display = "block";
-    document.getElementById("wednesdaytitles").style.height="fit-content";
-  } else {
-    document.getElementById("wednesdaytitles").style.display = "none";
-    document.getElementById("wednesdaytitles").style.height="0px";
-  }
-}
 
 window.onbeforeunload = function() {
   localStorage.setItem("bgmlooppoint", shoploop.currentTime);
@@ -58,14 +38,14 @@ function playBGM() {
   shoploop.volume = 0.8;
   localStorage.setItem("shopmusic", "playing");
   shoploop.play();
-  document.getElementById("shopbgm").innerHTML = "Pause BGM";
+  document.getElementById("shopbgm").innerHTML = "Pause";
   document.getElementById("shopbgmselector").href = "javascript:pauseBGM();";
 }
 
 function pauseBGM() {
   localStorage.setItem("shopmusic", "paused");
   shoploop.pause();
-  document.getElementById("shopbgm").innerHTML = "Play BGM";
+  document.getElementById("shopbgm").innerHTML = "Play";
   document.getElementById("shopbgmselector").href = "javascript:playBGM();";
 }
 
@@ -74,7 +54,7 @@ function playBGMonload() {
   fadeinbgm();
   localStorage.setItem("shopmusic", "playing");
   shoploop.play();
-  document.getElementById("shopbgm").innerHTML = "Pause BGM";
+  document.getElementById("shopbgm").innerHTML = "Pause";
   document.getElementById("shopbgmselector").href = "javascript:pauseBGM();";
 }
 
