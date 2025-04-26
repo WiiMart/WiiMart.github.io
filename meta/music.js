@@ -9,14 +9,17 @@ function hideConsoleControls() {
     userAgent.includes('nintendo');
   // they can't play music so rip
   if (isConsoleBrowser) {const bgmPlayerDiv = document.getElementById('bgmplayer');
-  if (bgmPlayerDiv) {bgmPlayerDiv.style.display = 'none';} }}
-document.addEventListener('DOMContentLoaded', hideConsoleControls);
+  if (bgmPlayerDiv) {bgmPlayerDiv.style.display = 'none';} }
+}
+
 
 var shoploop = new Audio("/meta/shop.wav");
 shoploop.loop = true;
 shoploop.volume = 0; // prevent clipping
 
-window.onload = function() {
+function loadafterwednesdaycheck() {
+  hideConsoleControls();
+
   var savedTime = localStorage.getItem("bgmlooppoint");
 
   if (savedTime) {
@@ -28,7 +31,7 @@ window.onload = function() {
   } else {
     pauseBGM();
   }
-};
+ }
 
 window.onbeforeunload = function() {
   localStorage.setItem("bgmlooppoint", shoploop.currentTime);
