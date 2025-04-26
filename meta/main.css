@@ -80,6 +80,6 @@ img.right {right: 10px; animation: rightHoverAnimation 0.5s infinite alternate;}
   #errorCode {background-color: black;border: 2px solid grey}
   body.dir a {color:white}
   mark {color:white}
-#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center;color:#FFF !important; background-color:#3b3b3b; height:0px; width:50%; transition:.3s ease-in-out;}
+#wednesdaytitles {margin-top:13px; margin-bottom:13px; border:none;position:relative; top:0px; left:0px; float:center;color:#FFF !important; background-color:#3b3b3b !important; height:0px; width:50%; transition:.3s ease-in-out;}
 
 }
